@@ -1,0 +1,16 @@
+﻿Step 1: Understand Recursive Algorithms
+======================================
+
+Recursion is a programming technique where a method calls itself to solve smaller instances of the same problem. It simplifies complex problems by breaking them down into manageable subproblems.
+
+Key points about recursion:
+- Each recursive call works on a smaller input.
+- A base case stops the recursion to prevent infinite calls.
+- Recursion can be elegant but may have performance drawbacks if not managed properly (e.g., repeated calculations or deep call stacks).
+
+Common examples where recursion is used:
+- Calculating factorial of a number
+- Generating Fibonacci sequence
+- Traversing tree or graph data structures
+
+Recursion helps to write cleaner and more readable code for problems that have a natural recursive structure.

@@ -1,0 +1,35 @@
+﻿Step 4: Analysis
+
+Time Complexity:
+Each call to the recursive method makes one more call until the base case.
+Time Complexity = O(n), where n is the number of years.
+
+Optimization:
+Although the recursive solution is simple and readable, it can be inefficient for large values of 'n' due to:
+- Multiple method calls
+- Stack overhead
+- Lack of memoization
+
+Better Approaches:
+
+1. Iteration:
+   - Use a loop instead of recursion.
+   - Time Complexity: O(n).
+   - Space Complexity: O(1).
+   
+   Example:
+   public static double CalculateFutureValueIteratively(double presentValue, double growthRate, int years)
+   {
+       double result = presentValue;
+       for (int i = 0; i < years; i++)
+       {
+           result *= (1 + growthRate);
+       }
+       return result;
+   }
+
+2. Direct Mathematical Formula:
+   - Use the formula:
+       Future Value = Present Value * Math.Pow(1 + growthRate, years)
+   - Time Complexity: O(1).
+   - Best for very long forecasting periods.

@@ -1,0 +1,34 @@
+﻿Step 1: Understand Asymptotic Notation
+======================================
+
+Big O Notation:
+---------------
+Big O notation is used to describe the performance or complexity of an algorithm.
+It expresses how the run time or space requirements grow as the input size increases.
+
+Common Time Complexities:
+--------------------------
+- O(1):     Constant time (e.g., hash table lookup)
+- O(log n): Logarithmic time (e.g., binary search)
+- O(n):     Linear time (e.g., linear search)
+- O(n log n): Log-linear time (e.g., merge sort, quick sort)
+- O(n^2):   Quadratic time (e.g., nested loops)
+
+Best, Average, and Worst-Case Scenarios for Search:
+----------------------------------------------------
+
+Linear Search:
+- Best Case:    O(1)         -> Target is the first element
+- Average Case: O(n/2) ≈ O(n)
+- Worst Case:   O(n)         -> Target is last or not found
+
+Binary Search (only works on sorted data):
+- Best Case:    O(1)         -> Target is the middle element
+- Average Case: O(log n)
+- Worst Case:   O(log n)
+
+Conclusion:
+-----------
+Big O notation helps us choose the right algorithm by estimating how it will behave
+as the dataset grows. Binary search is faster than linear search for large datasets,
+but requires the data to be sorted.

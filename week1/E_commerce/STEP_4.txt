@@ -1,0 +1,31 @@
+﻿Step 4: Time Complexity Analysis
+===============================
+
+Linear Search:
+--------------
+- Time Complexity: O(n)
+- Explanation: In the worst case, linear search checks each element once until it finds the target or reaches the end.
+- Best Case: O(1) when the target is the first element.
+- Average and Worst Case: O(n), where n is the number of products.
+
+Binary Search:
+--------------
+- Time Complexity: O(log n)
+- Explanation: Binary search repeatedly divides the sorted array in half to find the target, significantly reducing the number of comparisons.
+- Requires the array to be sorted beforehand.
+- Best Case: O(1) when the target is at the middle.
+- Average and Worst Case: O(log n).
+
+Comparison and Suitability:
+---------------------------
+- For small datasets or unsorted arrays, linear search is simple and sufficient.
+- For large datasets, binary search is far more efficient due to its logarithmic time.
+- However, binary search requires sorting the data first, which adds O(n log n) complexity if done repeatedly.
+- In an e-commerce platform, if products are frequently added or updated, maintaining a sorted data structure or using advanced data structures (like balanced trees or hash indexes) is recommended.
+- If search performance is critical and the dataset is large, binary search or even more advanced indexing/search algorithms should be preferred.
+
+Summary:
+--------
+- Linear search is easy to implement but inefficient for large datasets.
+- Binary search offers faster search times but depends on sorted data.
+- Choice depends on data size, update frequency, and performance requirements.
